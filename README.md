@@ -83,38 +83,32 @@ Pulls the latest source code from GitHub.
 2. Install Dependencies
 Installs all required Node.js packages.
 
-bash
 npm install
 
-3. Build
+4. Build
 Builds the application.
 
-bash
 npm run build
 
 4. Test (Optional)
 Executes application tests.
 
-bash
 npm test
 
 5. Build Docker Image
 Creates a Docker image from the Dockerfile.
 
-bash
 docker build -t node-app .
 
 6. Stop Existing Container
 Stops the running container before deploying the new version.
 
-bash
 docker stop node-app
 docker rm node-app
 
 7. Deploy
 Runs the newly built Docker container.
 
-bash
 docker run -d \
 --name node-app \
 -p 3000:3000 \
@@ -122,55 +116,26 @@ node-app
 
 Installation:
 
-Clone the repository
+Clone the repository:     git clone https://github.com/padmamani94/cicd-node-app.git
 
-bash
-git clone https://github.com/padmamani94/cicd-node-app.git
+Move into the project:    cd cicd-node-app
 
+Install dependencies:     npm install
 
-Move into the project
+Start the application:    npm start
 
-bash
-cd cicd-node-app
-
-
-Install dependencies
-
-bash
-npm install
-
-Start the application
-
-bash
-npm start
 
 Docker Commands
 
-Build Image
+Build Image:        docker build -t node-app .
 
-bash
-docker build -t node-app .
+Run Container:      docker run -d -p 3000:3000 --name node-app node-app
 
-Run Container
+Stop Container:     docker stop node-app
 
-bash
-docker run -d -p 3000:3000 --name node-app node-app
+Remove Container:   docker rm node-app
 
-Stop Container
-
-bash
-docker stop node-app
-
-
-Remove Container
-
-bash
-docker rm node-app
-
-List Running Containers
-
-bash
-docker ps
+Running Containers: docker ps
 
 Jenkins Prerequisites
 
@@ -216,8 +181,7 @@ This project demonstrates:
 - DevOps Best Practices
 
 Author
-Padmavathi Mani
-
+Padmavathi M
 DevOps Engineer
 
 GitHub
