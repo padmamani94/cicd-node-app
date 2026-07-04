@@ -183,7 +183,3 @@ This project demonstrates:
 Author
 Padmavathi M
 DevOps Engineer
-
-GitHub
-https://github.com/padmamani94
-
